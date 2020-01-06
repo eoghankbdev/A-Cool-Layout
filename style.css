@@ -1,0 +1,160 @@
+body {
+    margin: auto;
+    margin-top: -20px;
+      background: radial-gradient(circle closest-corner at center 125px,
+          #222,
+          black 40%) no-repeat;
+      text-align: center;
+      }
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    color: white;
+}
+
+#container {
+
+}
+
+.secondnav {
+    background-color: gray;
+    padding: -20px;
+}
+
+.navbar2 {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card>img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 500ms;
+}
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: -100%;
+    opacity: 0;
+    transition: top 500ms, opacity 1000ms;
+}
+
+.card .content p {
+    color: white;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.card:hover .content {
+    top: 0;
+    opacity: 1;
+}
+
+.card:hover .overlay {
+    background-color: rgba(0, 0, 0, .5)
+}
+/*Thats another way xd*/
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    float: left;
+    font-size: large;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background:  grey;
+}
+
+
+h1 {
+    display: inline-block;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient(circle farthest-corner at center center,
+            #ccc,
+            #333) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.title {
+    padding: 100px 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+    color: white;
+    border-top: 1px solid white;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg { 
+    width: 50px; 
+    height: 50px;
+    fill: white;
+    margin-top: 20px;
+}
